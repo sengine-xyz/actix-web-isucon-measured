@@ -2,6 +2,12 @@
 name = "actix-web-isucon-measured"
 version = "0.1.0"
 edition = "2021"
+license-file = "LICENSE"
+description = "A middleware to measure request processing time for ISUCON."
+homepage = "https://github.com/sengine-xyz/actix-web-isucon-measured"
+documentation = "https://github.com/sengine-xyz/actix-web-isucon-measured"
+repository = "https://github.com/sengine-xyz/actix-web-isucon-measured"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

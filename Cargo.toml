@@ -1,0 +1,16 @@
+[package]
+name = "actix-web-isucon-measured"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+futures-util = { version = "0.3.7", default-features = false, features = ["std"] }
+
+
+[dev-dependencies]
+log = "0.4"
+env_logger = "0.9"
+rand = "0.8"

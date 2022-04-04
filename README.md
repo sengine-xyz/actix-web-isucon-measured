@@ -47,7 +47,7 @@ async fn main() -> std::io::Result<()> {
 }
 ```
 
-## IUSCONで使うための詳細はこちらのブログを参照してください。
+## IUSCON11予選で練習するための詳細はこちらのブログを参照してください。
 
 https://sengine.xyz/2022/04/04/rust3/
 

@@ -32,13 +32,18 @@ async fn main() -> std::io::Result<()> {
         .wrap(Logger::default())
         .wrap(measured.clone())
         .service(hello)
-        .service(web::resource("/measured_tsv").route(web::get().to(|measured: web::Data<Measured>,| async move {
+        .service(web::resource("/measured_tsv").route(web::get().to(|measured: web::Data<Measured>| async move {
             measured.tsv(SortOptions::SUM)
+        })))
+        .service(web::resource("/measured_reset").route(web::get().to(|measured: web::Data<Measured>| async move {
+            measured.clear();
+            "Reset OK!.\n"
         })))
     })
     .bind(("0.0.0.0", 8080))?
     .run()
     .await
+
 }
 ```
 

@@ -1,6 +1,6 @@
 [package]
 name = "actix-web-isucon-measured"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license-file = "LICENSE"
 description = "A middleware to measure request processing time for ISUCON."
